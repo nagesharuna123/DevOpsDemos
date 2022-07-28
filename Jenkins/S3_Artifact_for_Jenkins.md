@@ -33,3 +33,5 @@ Follow this in  **[YouTube](https://youtu.be/GQZYpIRxi-g)**
    ```
 
 1. Create a job to store artifacts under S3.
+
+New Item-->Select maven project--> Git URL-->Root Pom --> Goals and option (clean install package)-->post build action(select publish artifact to s3 bucket)-->files to upload-->source(**/webapp/target/*.war)-->Exclude(webapp/target)-->destination bucket(bucket name)--> storage class--> save
